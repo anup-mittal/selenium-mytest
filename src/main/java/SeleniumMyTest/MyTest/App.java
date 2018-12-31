@@ -19,7 +19,9 @@ public class App
     public static void main( String[] args )
     {
     	WebDriver driver;
-		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/media/sf_shared/chromedriver");
+		
 		ChromeOptions chromeoptions = new ChromeOptions();
 		chromeoptions.addArguments("--headless"); // headless mode for jenkins
 		driver = new ChromeDriver(chromeoptions);
